@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Website</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <header class="main-header">
+        <!--Logo-->
+        <div class="logo-icon"></div>
+
+        <!--Navigation-->
+        <nav>
+            <a href="#section-home">Home</a>
+            <a href="#section-our-profile">Our Profile</a>
+            <a href="#section-portofolio">Portofolio</a>
+            <a href="#section-message-us">Message Us</a>
+        </nav>
+    </header>
+
+    <hr/>
+
+    <main>
+        <!--Home-->
+        <section id="section-home">
+            <header>
+                <h1>Hi <span id="name"> Harfi </span> Welcome To My Website!</h1>
+            </header>
+
+            <article>
+                <p>Ini adalah,Website latihan pertama</p>
+                <script src="js\script.js"></script>
+
+                <!--Photo Banner-->
+                <div class="photo-banner photo-1"></div>
+            </article>
+        </section>
+
+        <hr/>
+
+        <!--Profile-->
+        <section id="section-our-profile">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+
+        <div class="profile-icon-container">
+            <div>
+                <div class="profile-icon"></div>
+                <h4>Profile 1</h4>
+            </div>
+
+            <div>
+                <div class="profile-icon2"></div>
+                <h4>Profile 2</h4>
+            </div>
+        </section>
+
+        <hr/>
+
+        <!--Portofolio-->
+        <section id="section-portofolio">
+            <header>
+                <h1>Portofolio</h1>
+            </header>
+            <article>
+                <p> Hello aku athalariiq fildzahhanan ardian, aku bagian dari revou fudamental course software engineer, saya telah mempelajari bahasa java dan baru memulai bahasa html,css,dan javascript</p>
+            </article>
+        </section>
+
+        <hr/>
+
+        <!--Message Us-->
+        <section id="section-message-us">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+
+            <section>
+                <!--Form-->
+                <form id="myForm" onsubmit="return false;">
+                    <table>
+                        <tr>
+                            <td>
+                                Nama :
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Nama" name="name" id="input-name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Tanggal lahir:
+                            </td>
+                            <td>
+                                <input type="date" id="date" name="date" date="" size="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Jenis Kelamin:
+                            </td>
+                            <td>
+                                <input type="radio" name="gender" value="laki-laki" id="jenis-kelamin">
+                                <labeL for="male">laki-laki</labeL>
+                                <input type="radio" name="gender" value="perempuan" id="jenis-kelamin">
+                                <label for="female">perempuan</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Pesan:
+                            </td>
+                            <td>
+                                <input type="text" name="messages" placeholder="pesan" id="message" rows="4" style="width: 164px; height:85px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="Submit" onclick="validateform()">submit</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+
+                <!--Result Form-->
+                <div id="tabel">
+                    <h1> Result Form</h1>
+                    <p>Nama : <span id="result-form"></span></p>
+                    <p>Tanggal lahir : <span id="result-form2"></span> </p>
+                    <p>Jenis Kelamin : <span id="result-form3"></span></p>
+                    <p>Pesan : <span id="result-form4"></span></p>
+                    <table>
+                        
+                    </table>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <hr/>
+
+    <footer id="footer">
+        <p>Made By Ariq Ardian</p>
+    </footer>
+</body>
+
+</html>
